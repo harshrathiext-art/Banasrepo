@@ -3,37 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sahyog Dairy Cooperative | Home</title>
+<title>Banas Dairy | Home (Redesign Demo)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Top bar -->
-<div class="topbar">
-  <div class="container topbar-inner">
-    <div class="topbar-contact">
-      <a href="tel:911234567890">📞 91-1234 (567-890)</a>
-      <a href="mailto:info@sahyogdairy.coop">✉️ info@sahyogdairy.coop</a>
-    </div>
-    <div class="topbar-social">
-      <a href="#" aria-label="Facebook">FB</a>
-      <a href="#" aria-label="Instagram">IG</a>
-      <a href="#" aria-label="X">X</a>
-      <a href="#" aria-label="YouTube">YT</a>
-      <a href="#" aria-label="LinkedIn">IN</a>
-    </div>
-  </div>
-</div>
-
 <!-- Header / Nav -->
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">
-      <span class="logo-mark">SD</span>
-      <span class="logo-text">Sahyog<br><small>Dairy Cooperative</small></span>
+<header class="site-header-v2">
+  <div class="container header-v2-inner">
+    <a href="index.html" class="logo-v2">
+      <span class="logo-drop">🥛</span>
+      <span class="logo-text-v2">Banas<br><small>Dairy</small></span>
     </a>
+
+    <button class="menu-pill" id="navToggle" aria-label="Toggle navigation">☰ MENU</button>
+
+    <div class="header-right">
+      <a href="#home" class="nav-pill active">🏠 HOME</a>
+      <a href="#vlogs" class="nav-pill">Latest Vlogs <span class="badge-new">NEW</span></a>
+      <div class="social-circles">
+        <a href="#" aria-label="Facebook" class="sc sc-fb">f</a>
+        <a href="#" aria-label="Instagram" class="sc sc-ig">◎</a>
+        <a href="#" aria-label="X" class="sc sc-x">✕</a>
+        <a href="#" aria-label="YouTube" class="sc sc-yt">▶</a>
+        <a href="#" aria-label="LinkedIn" class="sc sc-in">in</a>
+      </div>
+      <div class="brand-badges">
+        <span class="brand-badge">Radio</span>
+        <span class="brand-badge">Blog</span>
+      </div>
+    </div>
 
     <nav class="main-nav" id="mainNav">
       <ul>
@@ -69,47 +70,54 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </header>
 
 <!-- Hero Slider -->
-<section class="hero" id="home">
-  <div class="hero-slider" id="heroSlider">
-    <div class="hero-slide active" style="--bg: linear-gradient(135deg,#0b6e4f,#1c9c68)">
-      <div class="container hero-content">
-        <h1>Welcome To Sahyog Dairy</h1>
-        <p>A leader in the region's dairy industry, delivering fresh, high-quality products to households everywhere. Committed to innovation, sustainability, and community welfare.</p>
-        <a href="#products" class="btn btn-primary">Explore Products</a>
+<section class="hero-v2" id="home">
+  <div class="hero-v2-slider" id="heroSlider">
+    <div class="hero-v2-slide active">
+      <div class="container hero-v2-inner">
+        <div class="hero-v2-text">
+          <h1>Welcome To<br>Banas Dairy</h1>
+          <p>A leading name in Gujarat's dairy industry, Banas Dairy brings fresh, high-quality products into households across India. Guided by a commitment to innovation, sustainability, and community welfare, every product is built around purity and nutrition — all in service of one mission: empowering farmers and enriching lives through outstanding dairy solutions.</p>
+        </div>
+        <div class="hero-v2-media">
+          <div class="arch-frame">
+            <div class="arch-placeholder ph-teal">Your Photo Here</div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="hero-slide" style="--bg: linear-gradient(135deg,#154c79,#1f7a99)">
-      <div class="container hero-content">
-        <h1>Purity You Can Trust</h1>
-        <p>Rich in taste, high in quality — crafted from the finest milk sourced directly from our farmer members.</p>
-        <a href="#products" class="btn btn-primary">Explore Products</a>
+    <div class="hero-v2-slide">
+      <div class="container hero-v2-inner">
+        <div class="hero-v2-text">
+          <h1>Purity You<br>Can Trust</h1>
+          <p>Rich in taste, high in quality — crafted from the finest milk sourced directly from our farmer members across every district we serve.</p>
+        </div>
+        <div class="hero-v2-media">
+          <div class="arch-frame">
+            <div class="arch-placeholder ph-amber">Your Photo Here</div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="hero-slide" style="--bg: linear-gradient(135deg,#7a4b12,#c17f2b)">
-      <div class="container hero-content">
-        <h1>From Pure Milk to Everyday Delight</h1>
-        <p>The taste of tradition, delivered fresh every day to your doorstep and beyond.</p>
-        <a href="#products" class="btn btn-primary">Explore Products</a>
-      </div>
-    </div>
-    <div class="hero-slide" style="--bg: linear-gradient(135deg,#4a1d7a,#7a3fb0)">
-      <div class="container hero-content">
-        <h1>Diverse Cattle Feed Solutions</h1>
-        <p>Boosting farmer cattle health and productivity through scientifically formulated feed products.</p>
-        <a href="#products" class="btn btn-primary">Explore Products</a>
+    <div class="hero-v2-slide">
+      <div class="container hero-v2-inner">
+        <div class="hero-v2-text">
+          <h1>Rooted In<br>Cooperation</h1>
+          <p>What began as a handful of village-level milk societies has grown into a trusted cooperative network, built on shared prosperity and community values.</p>
+        </div>
+        <div class="hero-v2-media">
+          <div class="arch-frame">
+            <div class="arch-placeholder ph-plum">Your Photo Here</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <button class="hero-nav prev" id="heroPrev" aria-label="Previous slide">‹</button>
-  <button class="hero-nav next" id="heroNext" aria-label="Next slide">›</button>
+  <button class="hero-v2-nav prev" id="heroPrev" aria-label="Previous slide">←</button>
+  <button class="hero-v2-nav next" id="heroNext" aria-label="Next slide">→</button>
   <div class="hero-dots" id="heroDots"></div>
 </section>
 
@@ -117,7 +125,7 @@
 <section class="about-strip" id="about-strip">
   <div class="container about-strip-inner">
     <div class="about-strip-text">
-      <span class="eyebrow">Welcome To Sahyog Dairy</span>
+      <span class="eyebrow">Welcome To Banas Dairy</span>
       <h2>We're a Leader in the Dairy Market</h2>
       <p>Cooperation is a quality that resides in the spirit of every community member. Our union believes in shared prosperity — bringing together thousands of farmer families under one roof to produce, process, and deliver quality dairy across the region.</p>
       <p>What began as a handful of village-level milk societies has grown into one of the most trusted dairy cooperative brands, built on the pillars of trust, transparency, and community-first values.</p>
@@ -166,7 +174,7 @@
       <span class="eyebrow">Leadership</span>
       <h2>Chairman's Message</h2>
       <p>"My dear milk producer brothers and sisters, who have brightened their lives with tremendous hard work — we have carried forward the cooperative values of collaboration and shared vision from one generation to the next. This tradition of cooperation, built on pillars of empathy and brotherhood, remains the foundation of everything we do."</p>
-      <span class="chairman-name">— Chairman, Sahyog Dairy Cooperative</span>
+      <span class="chairman-name">— Chairman, Banas Dairy</span>
       <a href="#about-strip" class="btn btn-outline">View More</a>
     </div>
   </div>
@@ -336,9 +344,9 @@
 <footer class="site-footer" id="contact">
   <div class="container footer-grid">
     <div class="footer-col">
-      <a href="index.html" class="logo footer-logo">
-        <span class="logo-mark">SD</span>
-        <span class="logo-text">Sahyog<br><small>Dairy Cooperative</small></span>
+      <a href="index.html" class="logo-v2 footer-logo">
+        <span class="logo-drop">🥛</span>
+        <span class="logo-text-v2">Banas<br><small>Dairy</small></span>
       </a>
       <p>India's Pride, Asia's Best.</p>
       <p class="visitors">Total Visitors: <strong>7,703,764</strong></p>
@@ -364,7 +372,7 @@
       <h4>Contact Us</h4>
       <p>📍 District Co-operative Milk Producers' Union, Main City – 000001</p>
       <p>📞 <a href="tel:911234567890">91-1234 (567-890)</a></p>
-      <p>✉️ <a href="mailto:info@sahyogdairy.coop">info@sahyogdairy.coop</a></p>
+      <p>✉️ <a href="mailto:demo@yourdomain.com">demo@yourdomain.com</a></p>
       <div class="footer-social">
         <a href="#">FB</a><a href="#">IG</a><a href="#">X</a><a href="#">YT</a><a href="#">IN</a>
       </div>
@@ -372,7 +380,7 @@
   </div>
   <div class="footer-bottom">
     <div class="container">
-      &copy; 2026 Sahyog Dairy Cooperative. All Rights Reserved. This is a demo/placeholder frontend template.
+      &copy; 2026 Banas Dairy. Redesign demo — placeholder content, not an official site.
     </div>
   </div>
 </footer>
