@@ -1,4 +1,4 @@
-// ===== Mobile nav toggle =====
+// ===== Nav toggle (☰ MENU button opens the nav panel) =====
 const navToggle = document.getElementById('navToggle');
 const mainNav = document.getElementById('mainNav');
 
@@ -6,7 +6,7 @@ navToggle.addEventListener('click', () => {
   mainNav.classList.toggle('open');
 });
 
-// Accordion-style dropdowns on mobile
+// Accordion-style dropdowns on mobile (desktop uses hover)
 document.querySelectorAll('.main-nav > ul > li').forEach((li) => {
   const link = li.querySelector('a');
   const dropdown = li.querySelector('.dropdown');
@@ -20,7 +20,7 @@ document.querySelectorAll('.main-nav > ul > li').forEach((li) => {
 });
 
 // ===== Hero slider =====
-const slides = document.querySelectorAll('.hero-slide');
+const slides = document.querySelectorAll('.hero-v2-slide');
 const dotsWrap = document.getElementById('heroDots');
 let current = 0;
 let heroInterval;
